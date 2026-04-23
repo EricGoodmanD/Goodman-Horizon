@@ -7,15 +7,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur transition-all duration-300">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
-        <Link href="/" className="flex items-center gap-3" aria-label="Goodman Horizon home">
-          <span className="relative h-12 w-12 shrink-0 md:h-14 md:w-14">
+        <Link href="/" className="flex items-center gap-2" aria-label="Goodman Horizon home">
+          <span className="relative h-[4.2rem] w-[4.2rem] shrink-0 md:h-[5.5rem] md:w-[5.5rem]">
             <AssetImage
               src={siteAssets.brand.logo}
               alt="Goodman Horizon logo"
               fallbackLabel="Logo missing"
               fill
-              sizes="(max-width: 768px) 48px, 56px"
-              className="object-contain object-center scale-[1.18]"
+              sizes="(max-width: 768px) 67px, 88px"
+              className="object-contain object-center"
             />
           </span>
           <span className="text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
