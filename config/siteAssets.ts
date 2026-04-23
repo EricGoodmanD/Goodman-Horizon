@@ -13,41 +13,41 @@ export const siteAssets = {
     favicon: '/brand/logo/goodman-horizon-favicon.png'
   },
   hero: {
-    main: '/images/hero/hero-main.jpg',
-    secondary: '/images/hero/hero-secondary.jpg'
+    main: '/images/hero/hero-main.png',
+    secondary: '/images/hero/hero-secondary.png'
   },
   sections: {
     familySupport: {
-      primary: '/images/family-support/family-support-01.jpg',
-      secondary: '/images/family-support/family-support-02.jpg'
+      primary: '/images/family-support/family-support-01.png',
+      secondary: '/images/family-support/family-support-02.png'
     },
     youthMentorship: {
-      primary: '/images/youth-mentorship/youth-mentorship-01.jpg',
-      secondary: '/images/youth-mentorship/youth-mentorship-02.jpg'
+      primary: '/images/youth-mentorship/youth-mentorship-01.png',
+      secondary: '/images/youth-mentorship/youth-mentorship-02.png'
     },
     caseManagement: {
-      primary: '/images/case-management/case-management-01.jpg',
-      secondary: '/images/case-management/case-management-02.jpg'
+      primary: '/images/case-management/case-management-01.png',
+      secondary: '/images/case-management/case-management-02.png'
     },
     behavioralHealth: {
-      primary: '/images/behavioral-health/behavioral-health-01.jpg',
-      secondary: '/images/behavioral-health/behavioral-health-02.jpg'
+      primary: '/images/behavioral-health/behavioral-health-01.png',
+      secondary: '/images/behavioral-health/behavioral-health-02.png'
     },
     communityOutreach: {
-      primary: '/images/community-outreach/community-outreach-01.jpg',
-      secondary: '/images/community-outreach/community-outreach-02.jpg'
+      primary: '/images/community-outreach/community-outreach-01.png',
+      secondary: '/images/community-outreach/community-outreach-02.png'
     },
     referralConsultations: {
-      primary: '/images/referral-consultations/referral-consultations-01.jpg',
-      secondary: '/images/referral-consultations/referral-consultations-02.jpg'
+      primary: '/images/referral-consultations/referral-consultations-01.png',
+      secondary: '/images/referral-consultations/referral-consultations-02.png'
     },
     housingSupport: {
-      primary: '/images/housing-support/housing-support-01.jpg',
-      secondary: '/images/housing-support/housing-support-02.jpg'
+      primary: '/images/housing-support/housing-support-01.png',
+      secondary: '/images/housing-support/housing-support-02.png'
     },
     trustCare: {
-      primary: '/images/trust-care/trust-care-01.jpg',
-      secondary: '/images/trust-care/trust-care-02.jpg'
+      primary: '/images/trust-care/trust-care-01.png',
+      secondary: '/images/trust-care/trust-care-02.png'
     }
   }
 } as const;
