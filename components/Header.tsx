@@ -8,14 +8,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur transition-all duration-300">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-3" aria-label="Goodman Horizon home">
-          <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm md:h-16 md:w-16">
+          <span className="relative h-12 w-12 shrink-0 md:h-14 md:w-14">
             <AssetImage
               src={siteAssets.brand.logo}
               alt="Goodman Horizon logo"
               fallbackLabel="Logo missing"
               fill
-              sizes="(max-width: 768px) 56px, 64px"
-              className="object-contain object-center p-0 scale-[1.35]"
+              sizes="(max-width: 768px) 48px, 56px"
+              className="object-contain object-center scale-[1.18]"
             />
           </span>
           <span className="text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
