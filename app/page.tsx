@@ -177,13 +177,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell pt-0">
+      <section className="section-shell pt-0 lg:pt-1 xl:pt-0">
         <h2 className="heading-lg">Core Services</h2>
         <p className="mt-3 max-w-3xl text-slate-700">
           We provide coordinated care and practical support so each person and family can access services with
           confidence.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-7 lg:gap-x-4 lg:gap-y-3 lg:grid-cols-3 xl:mt-8 xl:gap-4">
           {services.map((service) => (
             <div
               key={service}
@@ -201,12 +201,14 @@ export default function Home() {
       <section className="section-shell pt-0">
         <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10">
           <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Stories of trust</p>
-          <h2 className="mt-3 heading-lg">Families and partners rely on Goodman Horizon</h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <h2 className="mt-3 text-3xl font-semibold leading-tight text-brandBlue md:text-4xl lg:text-[2.15rem] xl:text-4xl">
+            Families and partners rely on Goodman Horizon
+          </h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-3 lg:mt-7 lg:gap-5 xl:mt-8 xl:gap-4">
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name + testimonial.role}
-                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft"
+                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-6 xl:p-5"
               >
                 <p className="text-sm leading-6 text-slate-700">“{testimonial.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-brandBlue">{testimonial.name}</p>
