@@ -10,7 +10,8 @@ export default function ContactPage() {
       <section className="section-shell grid gap-8 md:grid-cols-2">
         <div className="card">
           <h2 className="text-2xl font-semibold text-brandBlue">Get in touch</h2>
-          <p className="mt-4 text-slate-700">Email: info@goodmanhorizon.org</p>
+          <p className="mt-4 text-slate-700">Email: info@goodmanhorizon.com</p>
+          <p className="mt-2 text-slate-700">Web: goodmanhorizon.com</p>
           <p className="mt-2 text-slate-700">Phone: (410) 555-0108</p>
           <p className="mt-2 text-slate-700">Hours: Monday - Friday, 8:30 AM - 5:00 PM</p>
           <p className="mt-2 text-slate-700">Serving youth, adults, and families throughout Maryland.</p>

@@ -26,7 +26,7 @@ export default function CareersPage() {
             ))}
           </ul>
           <p className="mt-6 text-sm text-slate-700">
-            Send your resume and cover letter to careers@goodmanhorizon.org. We value lived experience, community
+            Send your resume and cover letter to careers@goodmanhorizon.com. We value lived experience, community
             knowledge, and professional excellence.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function CareersPage() {
         title="Build impact with us"
         description="Become part of a team committed to practical support, equity, and meaningful outcomes for people and families."
         primaryLabel="Apply by Email"
-        primaryHref="mailto:careers@goodmanhorizon.org"
+        primaryHref="mailto:careers@goodmanhorizon.com"
         secondaryLabel="Contact Leadership"
         secondaryHref="/contact"
       />

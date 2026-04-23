@@ -10,6 +10,7 @@ export default function Footer() {
           <p className="mt-3 max-w-sm text-sm text-slate-200">
             Community support and case management across Maryland for youth, adults, and families.
           </p>
+          <p className="mt-3 text-sm text-slate-100">goodmanhorizon.com</p>
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-brandGold">Quick Links</p>
@@ -24,7 +25,8 @@ export default function Footer() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-brandGold">Contact</p>
           <p className="mt-4 text-sm text-slate-100">Serving communities throughout Maryland.</p>
-          <p className="mt-2 text-sm text-slate-100">Email: info@goodmanhorizon.org</p>
+          <p className="mt-2 text-sm text-slate-100">Email: info@goodmanhorizon.com</p>
+          <p className="mt-1 text-sm text-slate-100">Web: goodmanhorizon.com</p>
           <p className="mt-1 text-sm text-slate-100">Phone: (410) 555-0108</p>
         </div>
       </div>

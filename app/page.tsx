@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import TrustMarkers from '@/components/TrustMarkers';
@@ -30,6 +31,57 @@ const testimonials = [
   }
 ];
 
+const photographySections = [
+  {
+    title: 'Family Support',
+    description: 'Warm, practical care coordination for households navigating complex needs.',
+    image:
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Youth Mentorship',
+    description: 'Trusted guidance that helps young people build confidence and momentum.',
+    image:
+      'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Case Management Meetings',
+    description: 'Professional planning sessions focused on outcomes, dignity, and access.',
+    image:
+      'https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Behavioral Health Support',
+    description: 'Compassionate conversations that center emotional wellness and stability.',
+    image:
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Community Outreach',
+    description: 'Relationship-based partnerships built directly in neighborhoods and communities.',
+    image:
+      'https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Referral Consultations',
+    description: 'Clear intake conversations that make next steps easy for families and agencies.',
+    image:
+      'https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Supportive Housing Coordination',
+    description: 'Collaborative support for housing pathways, safety, and long-term stability.',
+    image:
+      'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Professional Care & Trust-Building',
+    description: 'Human-centered support moments that strengthen confidence and belonging.',
+    image:
+      'https://images.unsplash.com/photo-1573497019707-1c04de26e58c?auto=format&fit=crop&w=1400&q=80'
+  }
+];
+
 export default function Home() {
   return (
     <>
@@ -58,7 +110,10 @@ export default function Home() {
             </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {trustStats.map((item) => (
-                <div key={item.label} className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5">
+                <div
+                  key={item.label}
+                  className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+                >
                   <p className="text-xs font-semibold uppercase tracking-wide text-brandGreen">{item.label}</p>
                   <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
                 </div>
@@ -91,7 +146,42 @@ export default function Home() {
 
       <TrustMarkers />
 
-      <section className="section-shell">
+      <section className="section-shell pt-0">
+        <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Real-world support in action</p>
+        <h2 className="mt-3 heading-lg">Professional, human-centered care moments across our work</h2>
+        <p className="mt-4 max-w-3xl text-slate-700">
+          Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
+          preserving premium composition, trust-building tone, and referral-focused storytelling.
+        </p>
+        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {photographySections.map((item, index) => (
+            <article
+              key={item.title}
+              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={`${item.title} photography placeholder`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                  className="object-cover transition duration-700 group-hover:scale-105"
+                  priority={index < 2}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brandBlue/55 to-transparent" />
+                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandBlue">
+                  {item.title}
+                </p>
+              </div>
+              <div className="p-4">
+                <p className="text-sm text-slate-700">{item.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-shell pt-0">
         <h2 className="heading-lg">Core Services</h2>
         <p className="mt-3 max-w-3xl text-slate-700">
           We provide coordinated care and practical support so each person and family can access services with
