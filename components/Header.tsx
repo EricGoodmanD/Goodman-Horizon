@@ -15,7 +15,7 @@ export default function Header() {
               fallbackLabel="Logo missing"
               fill
               sizes="(max-width: 768px) 48px, 56px"
-              className="object-contain object-center"
+              className="object-contain object-center scale-[1.18]"
             />
           </span>
           <span className="text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
