@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AssetImage from './AssetImage';
+import { siteAssets } from '@/config/siteAssets';
 import { navLinks } from './site-data';
 
 export default function Header() {
@@ -6,8 +8,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur transition-all duration-300">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-3" aria-label="Goodman Horizon home">
-          <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-xs font-semibold text-brandBlue">
-            LOGO
+          <span className="relative h-11 w-11 overflow-hidden rounded-lg border border-slate-200 bg-white">
+            <AssetImage
+              src={siteAssets.brand.logo}
+              alt="Goodman Horizon logo"
+              fallbackLabel="Logo missing"
+              fill
+              sizes="44px"
+              className="object-contain p-1"
+            />
           </span>
           <span className="text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
         </Link>
