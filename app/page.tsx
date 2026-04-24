@@ -123,13 +123,16 @@ export default function Home() {
               We combine leadership-ready coordination with community-centered care so every referral receives clear
               communication, responsive planning, and practical follow-through.
             </p>
-            <div className="mt-7 space-y-3.5">
+            <div className="mt-7 space-y-3.5 laptop-hero-card-points">
               {[
                 'Structured intake and care navigation for partners and families',
                 'Cross-sector coordination with schools, health, and community providers',
                 'Outcome-focused support designed around dignity and access'
               ].map((point) => (
-                <div key={point} className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white">
+                <div
+                  key={point}
+                  className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
+                >
                   <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
                   <p className="text-sm text-slate-700">{point}</p>
                 </div>
