@@ -118,27 +118,29 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
-            <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-700">
-              We combine leadership-ready coordination with community-centered care so every referral receives clear
-              communication, responsive planning, and practical follow-through.
-            </p>
-            <div className="mt-7 space-y-3.5 laptop-hero-card-points">
-              {[
-                'Structured intake and care navigation for partners and families',
-                'Cross-sector coordination with schools, health, and community providers',
-                'Outcome-focused support designed around dignity and access'
-              ].map((point) => (
-                <div
-                  key={point}
-                  className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
-                >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
-                  <p className="text-sm text-slate-700">{point}</p>
-                </div>
-              ))}
+          <div className="laptop-hero-right">
+            <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
+              <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
+              <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-700">
+                We combine leadership-ready coordination with community-centered care so every referral receives clear
+                communication, responsive planning, and practical follow-through.
+              </p>
+              <div className="mt-7 space-y-3.5 laptop-hero-card-points">
+                {[
+                  'Structured intake and care navigation for partners and families',
+                  'Cross-sector coordination with schools, health, and community providers',
+                  'Outcome-focused support designed around dignity and access'
+                ].map((point) => (
+                  <div
+                    key={point}
+                    className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
+                  >
+                    <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
+                    <p className="text-sm text-slate-700">{point}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
