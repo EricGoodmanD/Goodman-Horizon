@@ -115,7 +115,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    transform: translateY(calc(-1.25rem - 246px));
+    transform: translateY(calc(-1.25rem - 310px));
   }
 
   .laptop-hero-card-title {
