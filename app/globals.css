@@ -65,7 +65,7 @@ body {
     gap: 1.35rem;
     padding-top: 0.2rem;
     padding-bottom: 0.3rem;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
   }
 
