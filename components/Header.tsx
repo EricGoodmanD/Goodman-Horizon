@@ -6,9 +6,9 @@ import { navLinks } from './site-data';
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur transition-all duration-300">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
+      <div className="laptop-header-row mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-1.5" aria-label="Goodman Horizon home">
-          <span className="relative h-[5.1rem] w-[5.1rem] shrink-0 md:h-[6.7rem] md:w-[6.7rem]">
+          <span className="laptop-logo-wrap relative h-[5.1rem] w-[5.1rem] shrink-0 md:h-[6.7rem] md:w-[6.7rem]">
             <AssetImage
               src={siteAssets.brand.logo}
               alt="Goodman Horizon logo"
@@ -21,7 +21,7 @@ export default function Header() {
           <span className="pt-0.5 text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="laptop-nav hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -33,7 +33,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/referrals" className="btn-primary hidden md:inline-flex">
+        <Link href="/referrals" className="btn-primary laptop-header-cta hidden md:inline-flex">
           Make a Referral
         </Link>
       </div>
