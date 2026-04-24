@@ -85,17 +85,17 @@ export default function Home() {
         <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandGreen/20 blur-3xl animate-pulse-soft" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brandBlue/20 blur-3xl animate-float-slow" />
 
-        <div className="section-shell relative grid items-center gap-10 md:grid-cols-2">
-          <div className="animate-floatUp">
+        <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
+          <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
             <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Serving Maryland Communities</p>
-            <h1 className="heading-xl mt-4 max-w-xl">
+            <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
               Trusted care coordination that helps people feel supported, stable, and seen.
             </h1>
-            <p className="mt-5 max-w-xl text-lg text-slate-700">
+            <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
               Goodman Horizon partners with families, agencies, and providers to deliver compassionate case management
               and practical support for youth, adults, and families across Maryland.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-11">
               <Link href="/referrals" className="btn-primary">
                 Submit a Referral
               </Link>
@@ -103,7 +103,7 @@ export default function Home() {
                 Explore Services
               </Link>
             </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            <div className="mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
               {trustStats.map((item) => (
                 <div
                   key={item.label}
@@ -116,14 +116,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card animate-floatUp border-white/70 bg-white/85 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl">
+          <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
             <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
-            <h2 className="mt-2 text-2xl font-semibold text-brandBlue">Professional support with human warmth</h2>
+            <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               We combine leadership-ready coordination with community-centered care so every referral receives clear
               communication, responsive planning, and practical follow-through.
             </p>
-            <div className="mt-6 space-y-3">
+            <div className="mt-7 space-y-3.5">
               {[
                 'Structured intake and care navigation for partners and families',
                 'Cross-sector coordination with schools, health, and community providers',
@@ -141,20 +141,20 @@ export default function Home() {
 
       <TrustMarkers />
 
-      <section className="section-shell pt-0">
+      <section className="section-shell laptop-support-section pt-0">
         <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Real-world support in action</p>
-        <h2 className="mt-3 heading-lg">Professional, human-centered care moments across our work</h2>
+        <h2 className="mt-3 heading-lg laptop-support-title">Professional, human-centered care moments across our work</h2>
         <p className="mt-4 max-w-3xl text-slate-700">
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
           preserving premium composition, trust-building tone, and referral-focused storytelling.
         </p>
-        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-5 laptop-support-grid md:grid-cols-2 xl:grid-cols-4">
           {photographySections.map((item, index) => (
             <article
               key={item.title}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl"
+              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden laptop-support-media">
                 <AssetImage
                   src={item.image}
                   alt={`${item.title} photography placeholder`}
@@ -169,7 +169,7 @@ export default function Home() {
                   {item.title}
                 </p>
               </div>
-              <div className="p-4">
+              <div className="p-4 laptop-support-content">
                 <p className="text-sm text-slate-700">{item.description}</p>
               </div>
             </article>
@@ -177,17 +177,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell pt-0 lg:pt-1 xl:pt-0">
+      <section className="section-shell pt-0 lg:pt-3 xl:pt-2 laptop-core-section">
         <h2 className="heading-lg">Core Services</h2>
         <p className="mt-3 max-w-3xl text-slate-700">
           We provide coordinated care and practical support so each person and family can access services with
           confidence.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-7 lg:gap-x-4 lg:gap-y-3 lg:grid-cols-3 xl:mt-8 xl:gap-4">
+        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-6 xl:mt-11 xl:gap-x-7 xl:gap-y-7 laptop-core-grid">
           {services.map((service) => (
             <div
               key={service}
-              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandGreen/30 hover:shadow-xl"
+              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandGreen/30 hover:shadow-xl lg:p-7 laptop-core-card"
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
@@ -198,17 +198,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-shell pt-0">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10">
+      <section className="section-shell pt-0 lg:pt-2">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10 lg:p-12">
           <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Stories of trust</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-brandBlue md:text-4xl lg:text-[2.15rem] xl:text-4xl">
             Families and partners rely on Goodman Horizon
           </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-3 lg:mt-7 lg:gap-5 xl:mt-8 xl:gap-4">
+          <div className="mt-9 grid gap-5 md:grid-cols-3 lg:mt-10 lg:gap-6 xl:mt-11 xl:gap-7">
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name + testimonial.role}
-                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-6 xl:p-5"
+                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-7"
               >
                 <p className="text-sm leading-6 text-slate-700">“{testimonial.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-brandBlue">{testimonial.name}</p>
@@ -216,7 +216,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <div className="mt-8 grid gap-4 rounded-2xl bg-brandBlue p-6 text-white md:grid-cols-3">
+          <div className="mt-10 grid gap-4 rounded-2xl bg-brandBlue p-6 text-white md:grid-cols-3 lg:mt-11 lg:gap-5 lg:p-7">
             <div>
               <p className="text-2xl font-semibold">Referral-ready</p>
               <p className="mt-1 text-sm text-slate-100">Clear intake and communication from first contact.</p>
