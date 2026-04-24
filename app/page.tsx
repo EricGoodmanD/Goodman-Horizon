@@ -90,13 +90,13 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
               <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
-                Trusted care coordination that
+                Trusted care coordination
                 <br className="hidden min-[1441px]:block" />
                 <span className="min-[1441px]:hidden"> </span>
-                helps people feel supported,
+                that helps people feel
                 <br className="hidden min-[1441px]:block" />
                 <span className="min-[1441px]:hidden"> </span>
-                stable and seen.
+                supported, stable and seen.
               </h1>
               <div className="laptop-hero-content-group">
                 <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
