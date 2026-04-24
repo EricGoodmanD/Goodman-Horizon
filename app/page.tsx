@@ -120,7 +120,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="laptop-hero-right">
+          <div className="laptop-hero-right min-[1441px]:translate-y-[40px]">
             <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
               <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
               <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
