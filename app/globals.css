@@ -111,7 +111,7 @@ body {
 
   .laptop-hero-card {
     max-width: 21.375rem;
-    padding: 0.72rem;
+    padding: 0.58rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -124,11 +124,11 @@ body {
   }
 
   .laptop-hero-card-points {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
   }
 
   .laptop-hero-card-point {
-    padding: 0.52rem;
+    padding: 0.4rem 0.52rem;
     gap: 0.55rem;
   }
 
