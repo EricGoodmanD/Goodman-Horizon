@@ -61,10 +61,10 @@ body {
 
   .laptop-hero-shell {
     grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
-    min-height: 23.6rem;
+    min-height: 22.4rem;
     gap: 1.35rem;
-    padding-top: 1.8rem;
-    padding-bottom: 1.9rem;
+    padding-top: 1.55rem;
+    padding-bottom: 1.45rem;
     align-items: center;
     overflow: hidden;
   }
@@ -87,15 +87,15 @@ body {
   }
 
   .laptop-hero-actions {
-    margin-top: 0.45rem;
+    margin-top: 0.2rem;
     gap: 0.7rem;
-    transform: translateY(-24px);
+    transform: translateY(-34px);
   }
 
   .laptop-hero-stats {
-    margin-top: 0.25rem;
+    margin-top: 0.05rem;
     gap: 0.6rem;
-    transform: translateY(-40px);
+    transform: translateY(-56px);
   }
 
   .laptop-hero-card {
@@ -104,7 +104,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    transform: translateY(-1.15rem);
+    transform: translateY(-1.25rem);
   }
 
   .laptop-hero-card-title {
