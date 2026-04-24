@@ -143,7 +143,7 @@ export default function Home() {
 
       <section className="section-shell laptop-support-section pt-0">
         <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Real-world support in action</p>
-        <h2 className="mt-3 heading-lg">Professional, human-centered care moments across our work</h2>
+        <h2 className="mt-3 heading-lg laptop-support-title">Professional, human-centered care moments across our work</h2>
         <p className="mt-4 max-w-3xl text-slate-700">
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
           preserving premium composition, trust-building tone, and referral-focused storytelling.
@@ -183,7 +183,7 @@ export default function Home() {
           We provide coordinated care and practical support so each person and family can access services with
           confidence.
         </p>
-        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-6 xl:mt-11 xl:gap-x-7 xl:gap-y-7">
+        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-6 xl:mt-11 xl:gap-x-7 xl:gap-y-7 laptop-core-grid">
           {services.map((service) => (
             <div
               key={service}
