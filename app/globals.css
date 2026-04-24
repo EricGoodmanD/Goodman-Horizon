@@ -63,9 +63,9 @@ body {
     grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
     min-height: 19.4rem;
     gap: 1.35rem;
-    padding-top: 0.2rem;
+    padding-top: 1.6rem;
     padding-bottom: 0.3rem;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
   }
 
@@ -110,12 +110,12 @@ body {
   }
 
   .laptop-hero-card {
-    max-width: 23.25rem;
-    padding: 0.88rem;
+    max-width: 21.375rem;
+    padding: 0.72rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    transform: translateY(calc(-1.25rem - 55px));
+    transform: translateY(calc(-1.25rem - 310px));
   }
 
   .laptop-hero-card-title {
@@ -124,12 +124,12 @@ body {
   }
 
   .laptop-hero-card-points {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
 
   .laptop-hero-card-point {
-    padding: 0.62rem;
-    gap: 0.65rem;
+    padding: 0.52rem;
+    gap: 0.55rem;
   }
 
   .laptop-support-section {
