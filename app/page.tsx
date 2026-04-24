@@ -89,7 +89,7 @@ export default function Home() {
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
             <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
-              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl min-[1441px]:max-w-[31.5rem] lg:mt-6">
+              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl min-[1441px]:max-w-[38rem] lg:mt-6">
                 Trusted care coordination that helps people feel supported, stable and seen.
               </h1>
               <div className="laptop-hero-content-group">
