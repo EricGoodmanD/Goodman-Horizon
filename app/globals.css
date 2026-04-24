@@ -308,21 +308,6 @@ body {
     padding: 0.72rem 0.85rem;
   }
 
-  .real-world-card-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(280px, 1fr));
-    gap: 28px;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: stretch;
-  }
-
-  .real-world-card-grid .laptop-support-card {
-    width: 100%;
-    max-width: none;
-  }
 }
 
 @media (max-width: 767px) {

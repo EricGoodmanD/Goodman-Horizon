@@ -157,7 +157,7 @@ export default function Home() {
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
           preserving premium composition, trust-building tone, and referral-focused storytelling.
         </p>
-        <div className="mt-8 grid gap-5 laptop-support-grid real-world-card-grid">
+        <div className="mt-8 grid gap-5 laptop-support-grid real-world-card-grid md:grid-cols-2 xl:grid-cols-4">
           {photographySections.map((item, index) => (
             <article
               key={item.title}
