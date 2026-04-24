@@ -63,7 +63,7 @@ body {
     grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
     min-height: 19.4rem;
     gap: 1.35rem;
-    padding-top: 0.2rem;
+    padding-top: 1.6rem;
     padding-bottom: 0.3rem;
     align-items: flex-start;
     overflow: hidden;
