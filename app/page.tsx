@@ -80,7 +80,7 @@ const photographySections = [
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-brandGray">
+      <section className="relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
         <div className="pointer-events-none absolute inset-0 bg-hero-gradient opacity-70" />
         <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandGreen/20 blur-3xl animate-pulse-soft" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brandBlue/20 blur-3xl animate-float-slow" />

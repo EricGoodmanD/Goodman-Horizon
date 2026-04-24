@@ -35,6 +35,28 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .laptop-hero-breakpoint-debug {
+    outline: 1px solid #ef4444;
+    outline-offset: -1px;
+  }
+
+  .laptop-hero-breakpoint-debug::before {
+    content: 'LAPTOP BREAKPOINT ACTIVE';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 20;
+    background: #ef4444;
+    color: #fff;
+    font-size: 0.625rem;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.25rem;
+    pointer-events: none;
+  }
+
   .section-shell {
     padding-top: 3.35rem;
     padding-bottom: 3.35rem;
