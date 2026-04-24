@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Serving Maryland Communities</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
               <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
                 Trusted care coordination that helps people feel supported, stable, and seen.

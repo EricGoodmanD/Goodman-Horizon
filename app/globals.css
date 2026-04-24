@@ -69,6 +69,11 @@ body {
     overflow: hidden;
   }
 
+  .laptop-hero-eyebrow {
+    position: relative;
+    top: -8px;
+  }
+
   .laptop-hero-left {
     padding-right: 0.25rem;
     margin-top: -0.2rem;
@@ -110,7 +115,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    transform: translateY(calc(-1.25rem - 30px));
+    transform: translateY(calc(-1.25rem - 55px));
   }
 
   .laptop-hero-card-title {
