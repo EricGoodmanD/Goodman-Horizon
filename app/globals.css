@@ -201,8 +201,8 @@ body {
   }
 
   .laptop-core-card {
-    min-height: 2.4rem;
-    padding: 0.28rem 0.72rem;
+    min-height: 2.05rem;
+    padding: 0.2rem 0.72rem;
     display: flex;
     align-items: center;
   }
