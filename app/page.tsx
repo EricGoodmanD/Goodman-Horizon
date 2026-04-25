@@ -89,56 +89,60 @@ export default function Home() {
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
             <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
-              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
-                Trusted care coordination that helps people feel supported, stable, and seen.
+              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl min-[1441px]:max-w-[38rem] lg:mt-6">
+                Trusted care coordination that helps people feel supported, stable and seen.
               </h1>
-              <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
-                Goodman Horizon partners with families, agencies, and providers to deliver compassionate case
-                management and practical support for youth, adults, and families across Maryland.
-              </p>
-              <div className="mt-10 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-11">
-                <Link href="/referrals" className="btn-primary">
-                  Submit a Referral
-                </Link>
-                <Link href="/services" className="btn-secondary">
-                  Explore Services
-                </Link>
-              </div>
-              <div className="mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
-                {trustStats.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
-                  >
-                    <p className="text-xs font-semibold uppercase tracking-wide text-brandGreen">{item.label}</p>
-                    <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
-                  </div>
-                ))}
+              <div className="laptop-hero-content-group">
+                <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
+                  Goodman Horizon partners with families, agencies, and providers to deliver compassionate case
+                  management and practical support for youth, adults, and families across Maryland.
+                </p>
+                <div className="mt-10 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-11">
+                  <Link href="/referrals" className="btn-primary">
+                    Submit a Referral
+                  </Link>
+                  <Link href="/services" className="btn-secondary">
+                    Explore Services
+                  </Link>
+                </div>
+                <div className="mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
+                  {trustStats.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-wide text-brandGreen">{item.label}</p>
+                      <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
-            <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-700">
-              We combine leadership-ready coordination with community-centered care so every referral receives clear
-              communication, responsive planning, and practical follow-through.
-            </p>
-            <div className="mt-7 space-y-3.5 laptop-hero-card-points">
-              {[
-                'Structured intake and care navigation for partners and families',
-                'Cross-sector coordination with schools, health, and community providers',
-                'Outcome-focused support designed around dignity and access'
-              ].map((point) => (
-                <div
-                  key={point}
-                  className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
-                >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
-                  <p className="text-sm text-slate-700">{point}</p>
-                </div>
-              ))}
+          <div className="laptop-hero-right min-[1441px]:translate-y-[40px]">
+            <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
+              <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
+              <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-700">
+                We combine leadership-ready coordination with community-centered care so every referral receives clear
+                communication, responsive planning, and practical follow-through.
+              </p>
+              <div className="mt-7 space-y-3.5 laptop-hero-card-points">
+                {[
+                  'Structured intake and care navigation for partners and families',
+                  'Cross-sector coordination with schools, health, and community providers',
+                  'Outcome-focused support designed around dignity and access'
+                ].map((point) => (
+                  <div
+                    key={point}
+                    className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
+                  >
+                    <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
+                    <p className="text-sm text-slate-700">{point}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -153,7 +157,7 @@ export default function Home() {
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
           preserving premium composition, trust-building tone, and referral-focused storytelling.
         </p>
-        <div className="mt-8 grid gap-5 laptop-support-grid md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-5 laptop-support-grid real-world-card-grid md:grid-cols-2 xl:grid-cols-4">
           {photographySections.map((item, index) => (
             <article
               key={item.title}

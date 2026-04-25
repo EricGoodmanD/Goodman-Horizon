@@ -111,11 +111,15 @@ body {
 
   .laptop-hero-card {
     max-width: 21.375rem;
-    padding: 0.72rem;
+    padding: 0.58rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    transform: translateY(calc(-1.25rem - 310px));
+  }
+
+  .laptop-hero-right {
+    align-self: flex-start;
+    padding-top: 28px;
   }
 
   .laptop-hero-card-title {
@@ -124,17 +128,20 @@ body {
   }
 
   .laptop-hero-card-points {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
   }
 
   .laptop-hero-card-point {
-    padding: 0.52rem;
+    padding: 0.4rem 0.52rem;
     gap: 0.55rem;
   }
 
   .laptop-support-section {
     padding-top: 1.5rem;
     padding-bottom: 3.1rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .laptop-support-title {
@@ -143,15 +150,34 @@ body {
   }
 
   .laptop-support-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.8rem;
+    max-width: 68rem;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 0.75rem;
+    row-gap: 0.8rem;
+  }
+
+  .real-world-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .real-world-card-grid > * {
+    width: 100%;
+    max-width: none;
   }
 
   .laptop-support-card {
     border-radius: 1rem;
-    max-width: 17.7rem;
     width: 100%;
-    justify-self: center;
+    max-width: none;
+    justify-self: stretch;
   }
 
   .laptop-support-media {
@@ -163,19 +189,22 @@ body {
   }
 
   .laptop-core-section {
-    padding-top: 1.4rem;
-    padding-bottom: 3.6rem;
+    padding-top: 0.9rem;
+    padding-bottom: 2.4rem;
   }
 
   .laptop-core-grid {
-    margin-top: 1.75rem;
-    row-gap: 0.85rem;
+    margin-top: 1.1rem;
+    row-gap: 0.35rem;
     column-gap: 0.95rem;
+    align-items: start;
   }
 
   .laptop-core-card {
-    min-height: 6.6rem;
-    padding: 0.88rem;
+    min-height: 2.05rem;
+    padding: 0.2rem 0.72rem;
+    display: flex;
+    align-items: center;
   }
 
   .laptop-cta-shell {
@@ -216,28 +245,77 @@ body {
 
 @media (min-width: 1441px) {
   .laptop-hero-shell {
-    min-height: 34.5rem;
-    gap: 3.25rem;
-    padding-top: 3.25rem;
-    padding-bottom: 3.25rem;
+    grid-template-columns: minmax(0, 1.16fr) minmax(0, 0.84fr);
+    max-width: 80rem;
+    min-height: 38.5rem;
+    gap: 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    align-items: flex-start;
     overflow: hidden;
   }
 
+  .laptop-hero-left {
+    padding-right: 1.25rem;
+  }
+
   .laptop-hero-title {
-    font-size: 2.95rem;
-    line-height: 1.08;
-    max-width: 35rem;
+    font-size: 2.9rem;
+    line-height: 1.12;
+    max-width: 34.5rem;
+  }
+
+
+  .laptop-hero-content-group {
+    margin-top: -0.45rem;
   }
 
   .laptop-hero-copy {
-    font-size: 1.04rem;
-    line-height: 1.65;
-    max-width: 34rem;
+    margin-top: 0.95rem;
+    font-size: 1.12rem;
+    line-height: 1.7;
+    max-width: 38rem;
+  }
+
+  .laptop-hero-actions {
+    margin-top: 1rem;
+  }
+
+  .laptop-hero-stats {
+    margin-top: 0.9rem;
+    gap: 0.85rem;
+  }
+
+  .laptop-hero-stats > div {
+    padding: 0.95rem 1rem;
+  }
+
+  .laptop-hero-right {
+    align-self: flex-start;
+    padding-top: 2rem;
   }
 
   .laptop-hero-card {
-    max-width: 31.5rem;
+    max-width: 37.25rem;
+    padding: 2.3rem;
   }
+
+  .laptop-hero-card-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .laptop-hero-card-points {
+    margin-top: 1.15rem;
+    gap: 0.75rem;
+  }
+
+  .laptop-hero-card-point {
+    padding: 0.72rem 0.85rem;
+  }
+
 }
 
 @media (max-width: 767px) {
