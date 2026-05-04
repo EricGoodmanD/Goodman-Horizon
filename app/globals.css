@@ -156,15 +156,23 @@ body {
   }
 
   .laptop-support-grid {
+    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.8rem;
+    gap: 1.25rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .laptop-support-grid > * {
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
   }
 
   .laptop-support-card {
     border-radius: 1rem;
-    max-width: 17.7rem;
     width: 100%;
-    justify-self: center;
   }
 
   .laptop-support-media {
