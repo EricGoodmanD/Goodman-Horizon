@@ -198,11 +198,11 @@ export default function Home() {
           We provide coordinated care and practical support so each person and family can access services with
           confidence.
         </p>
-        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-6 xl:mt-11 xl:gap-x-7 xl:gap-y-7 laptop-core-grid">
+        <div className="mt-7 grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:mt-8 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-4 xl:mt-9 xl:gap-x-[1.125rem] xl:gap-y-[1.125rem] laptop-core-grid">
           {services.map((service) => (
             <div
               key={service}
-              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandAccent/30 hover:shadow-xl lg:p-7 laptop-core-card"
+              className="card group flex min-h-[2.75rem] items-center px-3.5 py-2.5 text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-0.5 hover:scale-[1.01] hover:border-brandAccent/30 hover:shadow-lg sm:min-h-[3rem] sm:px-4 sm:py-2.5 lg:min-h-[3.25rem] lg:px-[1.125rem] lg:py-3 laptop-core-card"
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
