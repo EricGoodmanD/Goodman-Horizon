@@ -33,7 +33,7 @@ export default function Footer() {
               <p>Serving communities throughout Maryland.</p>
               <p>Email: info@goodmanhorizon.com</p>
               <p>Web: goodmanhorizon.com</p>
-              <p>Phone: (410) 555-0108</p>
+              <p>Phone: 202 735 1044</p>
             </div>
           </div>
         </div>
