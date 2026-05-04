@@ -35,7 +35,7 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .hero-section .laptop-hero-shell {
+  .hero-section .hero-shell {
     padding-top: 1.45rem;
     padding-bottom: 0.2rem;
   }
@@ -46,11 +46,6 @@ body {
 
   .hero-section .metric-card {
     padding: 0.875rem 1rem;
-  }
-
-  .section-shell {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .laptop-header-row {
@@ -72,7 +67,7 @@ body {
     font-size: 0.8rem;
   }
 
-  .laptop-hero-shell {
+  .hero-shell {
     grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
     min-height: 19.4rem;
     gap: 1.35rem;
@@ -82,56 +77,56 @@ body {
     overflow: hidden;
   }
 
-  .laptop-hero-eyebrow {
+  .hero-eyebrow {
     position: relative;
     top: -8px;
   }
 
-  .laptop-hero-left {
+  .hero-left {
     padding-right: 0.25rem;
     margin-top: -0.2rem;
     transform: translateY(-10px);
   }
 
-  .laptop-hero-below-label {
+  .hero-below-label {
     transform: translateY(-20px);
   }
 
-  .laptop-hero-title {
+  .hero-title {
     font-size: 2.22rem;
     line-height: 1.1;
     margin-top: 0.8rem;
   }
 
-  .laptop-hero-copy {
+  .hero-copy {
     margin-top: 0.9rem;
     font-size: 0.93rem;
     line-height: 1.5;
     transform: translateY(-18px);
   }
 
-  .laptop-hero-actions {
+  .hero-actions {
     margin-top: 0.9rem;
     gap: 0.7rem;
     transform: none;
   }
 
-  .laptop-hero-cta-stats-group {
+  .hero-cta-stats-group {
     transform: translateY(-20px);
   }
 
-  .laptop-hero-stats {
+  .hero-stats {
     margin-top: 1.4rem;
     gap: 0.6rem;
     transform: none;
   }
 
 
-  .hero-right {
+  .hero-right-shell {
     transform: translateY(30px);
   }
 
-  .laptop-hero-card {
+  .hero-referral-card {
     max-width: 21.375rem;
     padding: 0.72rem;
     margin-left: auto;
@@ -140,16 +135,16 @@ body {
     transform: translateY(calc(-1.25rem - 310px));
   }
 
-  .laptop-hero-card-title {
+  .hero-card-title {
     font-size: 1.35rem;
     line-height: 1.25;
   }
 
-  .laptop-hero-card-points {
+  .hero-card-points {
     margin-top: 1rem;
   }
 
-  .laptop-hero-card-point {
+  .hero-card-point {
     padding: 0.52rem;
     gap: 0.55rem;
   }
@@ -244,8 +239,8 @@ body {
   }
 }
 
-@media (min-width: 1441px) {
-  .hero-section .laptop-hero-shell {
+@media (min-width: 1440px) {
+  .hero-section .hero-shell {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -258,7 +253,7 @@ body {
     padding: 0.875rem 1rem;
   }
 
-  .section-shell.laptop-hero-shell {
+  .section-shell.hero-shell {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -266,7 +261,7 @@ body {
     padding-right: 1.5rem;
   }
 
-  .laptop-hero-shell {
+  .hero-shell {
     min-height: 34rem;
     gap: 3rem;
     padding-top: 2.5rem;
@@ -276,13 +271,13 @@ body {
     align-items: center;
   }
 
-  .laptop-hero-title {
+  .hero-title {
     font-size: 2.95rem;
     line-height: 1.08;
     max-width: 35rem;
   }
 
-  .laptop-hero-copy {
+  .hero-copy {
     font-size: 1.04rem;
     line-height: 1.65;
     max-width: 34rem;
@@ -293,14 +288,14 @@ body {
     width: 100%;
   }
 
-  .hero-right {
+  .hero-right-shell {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-top: 1.5rem;
   }
 
-  .laptop-hero-card {
+  .hero-referral-card {
     max-width: 26.25rem;
     width: 100%;
     background: linear-gradient(135deg, rgb(255 255 255 / 0.88), rgb(237 246 255 / 0.72));
@@ -323,16 +318,16 @@ body {
     color: rgb(91 33 182);
   }
 
-  .laptop-hero-actions {
+  .hero-actions {
     margin-top: 1.25rem;
     gap: 1rem;
   }
 
-  .laptop-hero-copy {
+  .hero-copy {
     margin-top: 1rem;
   }
 
-  .laptop-hero-stats {
+  .hero-stats {
     margin-top: 1rem;
     gap: 1rem;
   }
@@ -344,37 +339,37 @@ body {
 }
 
 @media (max-width: 767px) {
-  .laptop-hero-shell {
+  .hero-shell {
     gap: 1.35rem;
     padding-top: 2.25rem;
     padding-bottom: 2.45rem;
     overflow: hidden;
   }
 
-  .laptop-hero-title {
+  .hero-title {
     margin-top: 0.7rem;
   }
 
-  .laptop-hero-copy {
+  .hero-copy {
     margin-top: 0.95rem;
     font-size: 1rem;
     line-height: 1.6;
   }
 
-  .laptop-hero-actions {
+  .hero-actions {
     margin-top: 1.15rem;
   }
 
-  .laptop-hero-stats {
+  .hero-stats {
     margin-top: 1.05rem;
     gap: 0.55rem;
   }
 
-  .laptop-hero-card {
+  .hero-referral-card {
     padding: 1.15rem;
   }
 
-  .laptop-hero-card-title {
+  .hero-card-title {
     font-size: 1.36rem;
     line-height: 1.25;
   }
