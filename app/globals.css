@@ -116,6 +116,10 @@ body {
     transform: none;
   }
 
+  .laptop-hero-cta-stats-group {
+    transform: translateY(-50px);
+  }
+
   .laptop-hero-stats {
     margin-top: 1.4rem;
     gap: 0.6rem;
