@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-violet-500 laptop-hero-eyebrow">Serving Maryland Communities</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-violet-500 laptop-hero-eyebrow hero-accent-label">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
               <h1 className="heading-xl laptop-hero-title mt-4 max-w-xl lg:mt-5">
                 Trusted care coordination that helps people feel supported, stable, and seen.
@@ -105,7 +105,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/services"
-                  className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700"
+                  className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700 hero-secondary-cta"
                 >
                   Explore Services
                 </Link>
@@ -124,8 +124,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card animate-floatUp border border-white/80 bg-gradient-to-br from-white/75 to-sky-100/55 p-7 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.28)] backdrop-blur-lg transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-violet-500">Referral confidence</p>
+          <div className="hero-referral-shell card animate-floatUp border border-white/80 bg-gradient-to-br from-white/75 to-sky-100/55 p-7 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.28)] backdrop-blur-lg transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wide text-violet-500 hero-accent-label">Referral confidence</p>
             <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               We combine leadership-ready coordination with community-centered care so every referral receives clear
@@ -139,9 +139,9 @@ export default function Home() {
               ].map((point) => (
                 <div
                   key={point}
-                  className="flex items-start gap-2 rounded-xl bg-brandGray pl-2.5 pr-3 py-2.5 transition duration-300 hover:bg-white laptop-hero-card-point"
+                  className="flex items-start gap-2 rounded-xl bg-brandGray pl-2.5 pr-3 py-2.5 transition duration-300 hover:bg-white laptop-hero-card-point hero-point-row"
                 >
-                  <span className="mt-1.5 inline-block h-1.5 w-1.5 rounded-full bg-violet-500" />
+                  <span className="mt-1.5 inline-block h-1.5 w-1.5 rounded-full bg-violet-500 hero-point-dot" />
                   <p className="text-sm text-slate-700">{point}</p>
                 </div>
               ))}
