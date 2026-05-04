@@ -202,14 +202,15 @@ body {
   }
 
   .laptop-core-grid {
-    margin-top: 1.75rem;
-    row-gap: 0.85rem;
-    column-gap: 0.95rem;
+    margin-top: 1.2rem;
+    row-gap: 0.65rem;
+    column-gap: 0.8rem;
+    max-width: 64rem;
   }
 
   .laptop-core-card {
-    min-height: 6.6rem;
-    padding: 0.88rem;
+    min-height: 3rem;
+    padding: 0.62rem 0.82rem;
   }
 
   .laptop-cta-shell {
