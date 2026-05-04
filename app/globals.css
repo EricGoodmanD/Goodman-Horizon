@@ -215,13 +215,21 @@ body {
 }
 
 @media (min-width: 1441px) {
+  .section-shell.laptop-hero-shell {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .laptop-hero-shell {
-    min-height: 34.5rem;
-    gap: 3.25rem;
-    padding-top: 3.25rem;
-    padding-bottom: 3.25rem;
+    min-height: 34rem;
+    gap: 3rem;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
     overflow: hidden;
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
     align-items: center;
   }
 
@@ -238,12 +246,20 @@ body {
   }
 
   .hero-referral-shell {
-    justify-self: center;
+    justify-self: start;
     width: 100%;
   }
 
+  .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+  }
+
   .laptop-hero-card {
-    max-width: 31.5rem;
+    max-width: 26.25rem;
+    width: 100%;
     background: linear-gradient(135deg, rgb(255 255 255 / 0.88), rgb(237 246 255 / 0.72));
     border-color: rgb(255 255 255 / 0.94);
     box-shadow: 0 22px 48px -28px rgb(15 23 42 / 0.42), 0 8px 20px -18px rgb(79 70 229 / 0.3);
@@ -265,7 +281,17 @@ body {
   }
 
   .laptop-hero-actions {
-    gap: 0.65rem;
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+
+  .laptop-hero-copy {
+    margin-top: 1rem;
+  }
+
+  .laptop-hero-stats {
+    margin-top: 1.25rem;
+    gap: 1rem;
   }
 
   .hero-point-row {
