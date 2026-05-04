@@ -349,6 +349,20 @@ body {
 }
 
 @media (max-width: 767px) {
+  .hero-accent-label,
+  .hero-point-dot,
+  .support-image-tag,
+  .core-service-arrow,
+  .mobile-secondary-accent,
+  .hero-secondary-cta {
+    color: theme('colors.brandAccent') !important;
+  }
+
+  .mobile-secondary-accent,
+  .hero-secondary-cta {
+    border-color: theme('colors.brandAccent') !important;
+  }
+
   .hero-shell {
     gap: 1.35rem;
     padding-top: 2.25rem;
