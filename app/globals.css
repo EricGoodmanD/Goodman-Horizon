@@ -31,7 +31,7 @@ body {
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center rounded-full border border-brandBlue px-6 py-3 text-sm font-semibold text-brandBlue transition hover:bg-brandGray;
+  @apply inline-flex items-center justify-center rounded-full border border-brandAccent px-6 py-3 text-sm font-semibold text-brandAccent transition hover:bg-brandAccent/10;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {

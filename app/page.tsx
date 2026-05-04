@@ -135,7 +135,7 @@ export default function Home() {
                   key={point}
                   className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
                 >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandCobalt" />
+                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandAccent" />
                   <p className="text-sm text-slate-700">{point}</p>
                 </div>
               ))}
@@ -157,7 +157,7 @@ export default function Home() {
           {photographySections.map((item, index) => (
             <article
               key={item.title}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
+              className="group overflow-hidden rounded-2xl border border-sky-100 bg-sky-50/40 shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
             >
               <div className="relative aspect-[4/3] overflow-hidden laptop-support-media">
                 <AssetImage
@@ -170,7 +170,7 @@ export default function Home() {
                   priority={index < 2}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brandBlue/55 to-transparent" />
-                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandBlue">
+                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandAccent">
                   {item.title}
                 </p>
               </div>
@@ -204,7 +204,7 @@ export default function Home() {
       </section>
 
       <section className="section-shell pt-0 lg:pt-2">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10 lg:p-12">
+        <div className="rounded-3xl border border-sky-100 bg-sky-50/45 p-8 shadow-soft md:p-10 lg:p-12">
           <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Stories of trust</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-brandBlue md:text-4xl lg:text-[2.15rem] xl:text-4xl">
             Families and partners rely on Goodman Horizon
@@ -213,7 +213,7 @@ export default function Home() {
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name + testimonial.role}
-                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-7"
+                className="rounded-2xl border border-sky-100 bg-sky-50/60 p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-7"
               >
                 <p className="text-sm leading-6 text-slate-700">“{testimonial.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-brandBlue">{testimonial.name}</p>
