@@ -87,20 +87,26 @@ export default function Home() {
 
         <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent laptop-hero-eyebrow">Serving Maryland Communities</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-violet-500 laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
-              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
+              <h1 className="heading-xl laptop-hero-title mt-4 max-w-xl lg:mt-5">
                 Trusted care coordination that helps people feel supported, stable, and seen.
               </h1>
               <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
                 Goodman Horizon partners with families, agencies, and providers to deliver compassionate case
                 management and practical support for youth, adults, and families across Maryland.
               </p>
-              <div className="mt-10 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-11">
-                <Link href="/referrals" className="btn-primary">
+              <div className="mt-8 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-9">
+                <Link
+                  href="/referrals"
+                  className="btn-primary bg-violet-700 shadow-violet-700/25 hover:bg-violet-800 focus-visible:ring-violet-700"
+                >
                   Submit a Referral
                 </Link>
-                <Link href="/services" className="btn-secondary">
+                <Link
+                  href="/services"
+                  className="btn-secondary border-violet-200 text-violet-700 hover:border-violet-300 hover:bg-violet-50"
+                >
                   Explore Services
                 </Link>
               </div>
@@ -118,8 +124,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brandAccent">Referral confidence</p>
+          <div className="card animate-floatUp border-white/70 bg-gradient-to-br from-white/75 to-sky-100/55 p-7 backdrop-blur-lg transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wide text-violet-500">Referral confidence</p>
             <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               We combine leadership-ready coordination with community-centered care so every referral receives clear
@@ -133,9 +139,9 @@ export default function Home() {
               ].map((point) => (
                 <div
                   key={point}
-                  className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
+                  className="flex items-start gap-2.5 rounded-xl bg-brandGray pl-2.5 pr-3 py-3 transition duration-300 hover:bg-white laptop-hero-card-point"
                 >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandAccent" />
+                  <span className="mt-1.5 inline-block h-2 w-2 rounded-full bg-violet-500" />
                   <p className="text-sm text-slate-700">{point}</p>
                 </div>
               ))}
