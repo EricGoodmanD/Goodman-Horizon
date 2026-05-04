@@ -183,6 +183,15 @@ body {
     aspect-ratio: 16 / 9;
   }
 
+  .laptop-support-media img {
+    object-fit: cover;
+    object-position: center 35%;
+  }
+
+  .laptop-support-section .laptop-support-card:nth-child(2) .laptop-support-media img {
+    object-position: center 28%;
+  }
+
   .laptop-support-content {
     padding: 0.72rem;
   }
