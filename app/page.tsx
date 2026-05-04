@@ -80,65 +80,75 @@ const photographySections = [
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
+      <section className="hero-section relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
         <div className="pointer-events-none absolute inset-0 bg-hero-gradient opacity-70" />
-        <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandGreen/20 blur-3xl animate-pulse-soft" />
+        <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandAccent/20 blur-3xl animate-pulse-soft" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brandBlue/20 blur-3xl animate-float-slow" />
 
-        <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
-          <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
-            <div className="laptop-hero-below-label">
-              <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
+        <div className="section-shell hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
+          <div className="animate-floatUp hero-left lg:pr-4 xl:pr-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-violet-500 hero-eyebrow hero-accent-label">Serving Maryland Communities</p>
+            <div className="hero-below-label">
+              <h1 className="heading-xl hero-title mt-4 max-w-xl lg:mt-5">
                 Trusted care coordination that helps people feel supported, stable, and seen.
               </h1>
-              <p className="mt-7 max-w-xl text-lg text-slate-700 laptop-hero-copy lg:mt-8">
+              <p className="mt-7 max-w-xl text-lg text-slate-700 hero-copy lg:mt-8">
                 Goodman Horizon partners with families, agencies, and providers to deliver compassionate case
                 management and practical support for youth, adults, and families across Maryland.
               </p>
-              <div className="mt-10 flex flex-wrap gap-3.5 laptop-hero-actions lg:mt-11">
-                <Link href="/referrals" className="btn-primary">
-                  Submit a Referral
-                </Link>
-                <Link href="/services" className="btn-secondary">
-                  Explore Services
-                </Link>
-              </div>
-              <div className="mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
-                {trustStats.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+              <div className="hero-cta-stats-group">
+                <div className="mt-8 flex flex-wrap items-center gap-3 hero-actions lg:mt-9">
+                  <Link
+                    href="/referrals"
+                    className="btn-primary bg-violet-700 shadow-violet-700/25 hover:bg-violet-800 focus-visible:ring-violet-700"
                   >
-                    <p className="text-xs font-semibold uppercase tracking-wide text-brandGreen">{item.label}</p>
-                    <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
-                  </div>
-                ))}
+                    Submit a Referral
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700 hero-secondary-cta"
+                  >
+                    Explore Services
+                  </Link>
+                </div>
+                <div className="hero-metrics mt-10 grid gap-3.5 hero-stats sm:grid-cols-3 lg:mt-12">
+                  {trustStats.map((item) => (
+                    <div
+                      key={item.label}
+                      className="metric-card rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-wide text-brandAccent">{item.label}</p>
+                      <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
-            <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-700">
-              We combine leadership-ready coordination with community-centered care so every referral receives clear
-              communication, responsive planning, and practical follow-through.
-            </p>
-            <div className="mt-7 space-y-3.5 laptop-hero-card-points">
-              {[
-                'Structured intake and care navigation for partners and families',
-                'Cross-sector coordination with schools, health, and community providers',
-                'Outcome-focused support designed around dignity and access'
-              ].map((point) => (
-                <div
-                  key={point}
-                  className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
-                >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
-                  <p className="text-sm text-slate-700">{point}</p>
-                </div>
-              ))}
+          <div className="hero-right-shell">
+            <div className="hero-referral-card card animate-floatUp border border-white/80 bg-gradient-to-br from-white/75 to-sky-100/55 p-7 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.28)] backdrop-blur-lg transition duration-500 hover:-translate-y-1 hover:shadow-xl lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
+              <p className="text-sm font-semibold uppercase tracking-wide text-violet-500 hero-accent-label">Referral confidence</p>
+              <h2 className="mt-2 text-2xl font-semibold text-brandBlue hero-card-title">Professional support with human warmth</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-700">
+                We combine leadership-ready coordination with community-centered care so every referral receives clear
+                communication, responsive planning, and practical follow-through.
+              </p>
+              <div className="mt-7 space-y-2.5 hero-card-points">
+                {[
+                  'Structured intake and care navigation for partners and families',
+                  'Cross-sector coordination with schools, health, and community providers',
+                  'Outcome-focused support designed around dignity and access'
+                ].map((point) => (
+                  <div
+                    key={point}
+                    className="flex items-start gap-2 rounded-xl bg-brandGray pl-2.5 pr-3 py-2.5 transition duration-300 hover:bg-white hero-card-point hero-point-row"
+                  >
+                    <span className="mt-1.5 inline-block h-1.5 w-1.5 rounded-full bg-violet-500 hero-point-dot" />
+                    <p className="text-sm text-slate-700">{point}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +157,7 @@ export default function Home() {
       <TrustMarkers />
 
       <section className="section-shell laptop-support-section pt-0">
-        <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Real-world support in action</p>
+        <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Real-world support in action</p>
         <h2 className="mt-3 heading-lg laptop-support-title">Professional, human-centered care moments across our work</h2>
         <p className="mt-4 max-w-3xl text-slate-700">
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
@@ -157,7 +167,7 @@ export default function Home() {
           {photographySections.map((item, index) => (
             <article
               key={item.title}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
+              className="group overflow-hidden rounded-2xl border border-sky-100 bg-sky-50/40 shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
             >
               <div className="relative aspect-[4/3] overflow-hidden laptop-support-media">
                 <AssetImage
@@ -170,7 +180,7 @@ export default function Home() {
                   priority={index < 2}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brandBlue/55 to-transparent" />
-                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandBlue">
+                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandAccent support-image-tag">
                   {item.title}
                 </p>
               </div>
@@ -188,15 +198,15 @@ export default function Home() {
           We provide coordinated care and practical support so each person and family can access services with
           confidence.
         </p>
-        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-6 xl:mt-11 xl:gap-x-7 xl:gap-y-7 laptop-core-grid">
+        <div className="mt-7 grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:mt-8 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-4 xl:mt-9 xl:gap-x-[1.125rem] xl:gap-y-[1.125rem] laptop-core-grid">
           {services.map((service) => (
             <div
               key={service}
-              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandGreen/30 hover:shadow-xl lg:p-7 laptop-core-card"
+              className="card group flex min-h-[2.75rem] items-center px-3.5 py-2.5 text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-0.5 hover:scale-[1.01] hover:border-brandAccent/30 hover:shadow-lg sm:min-h-[3rem] sm:px-4 sm:py-2.5 lg:min-h-[3.25rem] lg:px-[1.125rem] lg:py-3 laptop-core-card"
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
-                <span className="text-brandGreen transition duration-300 group-hover:translate-x-0.5">→</span>
+                <span className="text-brandAccent transition duration-300 group-hover:translate-x-0.5 core-service-arrow">→</span>
               </div>
             </div>
           ))}
@@ -204,8 +214,8 @@ export default function Home() {
       </section>
 
       <section className="section-shell pt-0 lg:pt-2">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10 lg:p-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Stories of trust</p>
+        <div className="rounded-3xl border border-sky-100 bg-sky-50/45 p-8 shadow-soft md:p-10 lg:p-12">
+          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Stories of trust</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-brandBlue md:text-4xl lg:text-[2.15rem] xl:text-4xl">
             Families and partners rely on Goodman Horizon
           </h2>
@@ -213,7 +223,7 @@ export default function Home() {
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name + testimonial.role}
-                className="rounded-2xl border border-slate-200 bg-brandGray p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-7"
+                className="rounded-2xl border border-sky-100 bg-sky-50/60 p-5 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft lg:p-7"
               >
                 <p className="text-sm leading-6 text-slate-700">“{testimonial.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-brandBlue">{testimonial.name}</p>
@@ -240,7 +250,7 @@ export default function Home() {
 
       <section className="section-shell pt-0">
         <div className="rounded-3xl bg-brandGray p-8 md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Our mission in action</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Our mission in action</p>
           <h2 className="mt-3 heading-lg">Professional leadership with a deeply human approach</h2>
           <p className="mt-4 max-w-4xl text-slate-700">
             Goodman Horizon exists to make complex systems easier to navigate for people who need support most. We pair
@@ -248,7 +258,7 @@ export default function Home() {
             confidence.
           </p>
           <div className="mt-7">
-            <Link href="/about" className="btn-secondary">
+            <Link href="/about" className="btn-secondary mobile-secondary-accent">
               Learn More About Our Mission
             </Link>
           </div>

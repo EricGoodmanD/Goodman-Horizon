@@ -14,13 +14,13 @@ export default function Footer() {
             <p className="mt-6 text-sm font-medium text-slate-100">goodmanhorizon.com</p>
           </div>
           <div className="md:pl-2 laptop-footer-links">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandGold">Quick Links</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandCobalt">Quick Links</p>
             <div className="mt-6 grid gap-3 text-sm">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-medium text-slate-100/95 transition-colors duration-200 hover:text-brandGold"
+                  className="font-medium text-slate-100/95 transition-colors duration-200 hover:text-brandCobalt"
                 >
                   {link.label}
                 </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="md:text-left laptop-footer-contact">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandGold">Contact</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandCobalt">Contact</p>
             <div className="mt-6 space-y-2 text-sm text-slate-100/95">
               <p>Serving communities throughout Maryland.</p>
               <p>Email: info@goodmanhorizon.com</p>

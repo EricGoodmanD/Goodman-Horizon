@@ -8,16 +8,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brandBlue: '#0A2D62',
-        brandGreen: '#0C8A61',
-        brandGold: '#C9A44B',
-        brandGray: '#F5F4F2'
+        brandBlue: '#123A8A',
+        brandCobalt: '#2F6BFF',
+        brandSky: '#74C8FF',
+        brandAccent: '#B23BFF',
+        brandGray: '#EEF5FF'
       },
       boxShadow: {
         soft: '0 10px 35px rgba(10, 45, 98, 0.12)'
       },
       backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at 15% 20%, rgba(12, 138, 97, 0.18), transparent 40%), radial-gradient(circle at 85% 80%, rgba(10, 45, 98, 0.16), transparent 45%)'
+        'hero-gradient': 'radial-gradient(circle at 14% 24%, rgba(116, 200, 255, 0.24), transparent 42%), radial-gradient(circle at 86% 76%, rgba(178, 59, 255, 0.16), transparent 46%)'
       },
       keyframes: {
         floatUp: {
