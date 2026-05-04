@@ -180,7 +180,7 @@ export default function Home() {
                   priority={index < 2}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brandBlue/55 to-transparent" />
-                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandAccent">
+                <p className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brandAccent support-image-tag">
                   {item.title}
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function Home() {
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
-                <span className="text-brandAccent transition duration-300 group-hover:translate-x-0.5">→</span>
+                <span className="text-brandAccent transition duration-300 group-hover:translate-x-0.5 core-service-arrow">→</span>
               </div>
             </div>
           ))}
@@ -258,7 +258,7 @@ export default function Home() {
             confidence.
           </p>
           <div className="mt-7">
-            <Link href="/about" className="btn-secondary">
+            <Link href="/about" className="btn-secondary mobile-secondary-accent">
               Learn More About Our Mission
             </Link>
           </div>
