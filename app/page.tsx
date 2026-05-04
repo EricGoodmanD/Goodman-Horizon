@@ -96,30 +96,32 @@ export default function Home() {
                 Goodman Horizon partners with families, agencies, and providers to deliver compassionate case
                 management and practical support for youth, adults, and families across Maryland.
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-3 laptop-hero-actions lg:mt-9">
-                <Link
-                  href="/referrals"
-                  className="btn-primary bg-violet-700 shadow-violet-700/25 hover:bg-violet-800 focus-visible:ring-violet-700"
-                >
-                  Submit a Referral
-                </Link>
-                <Link
-                  href="/services"
-                  className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700 hero-secondary-cta"
-                >
-                  Explore Services
-                </Link>
-              </div>
-              <div className="hero-metrics mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
-                {trustStats.map((item) => (
-                  <div
-                    key={item.label}
-                    className="metric-card rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+              <div className="laptop-hero-cta-stats-group">
+                <div className="mt-8 flex flex-wrap items-center gap-3 laptop-hero-actions lg:mt-9">
+                  <Link
+                    href="/referrals"
+                    className="btn-primary bg-violet-700 shadow-violet-700/25 hover:bg-violet-800 focus-visible:ring-violet-700"
                   >
-                    <p className="text-xs font-semibold uppercase tracking-wide text-brandAccent">{item.label}</p>
-                    <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
-                  </div>
-                ))}
+                    Submit a Referral
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700 hero-secondary-cta"
+                  >
+                    Explore Services
+                  </Link>
+                </div>
+                <div className="hero-metrics mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
+                  {trustStats.map((item) => (
+                    <div
+                      key={item.label}
+                      className="metric-card rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-wide text-brandAccent">{item.label}</p>
+                      <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
