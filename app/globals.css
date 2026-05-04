@@ -221,6 +221,8 @@ body {
     padding-top: 3.25rem;
     padding-bottom: 3.25rem;
     overflow: hidden;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    align-items: center;
   }
 
   .laptop-hero-title {
@@ -235,8 +237,40 @@ body {
     max-width: 34rem;
   }
 
+  .hero-referral-shell {
+    justify-self: center;
+    width: 100%;
+  }
+
   .laptop-hero-card {
     max-width: 31.5rem;
+    background: linear-gradient(135deg, rgb(255 255 255 / 0.88), rgb(237 246 255 / 0.72));
+    border-color: rgb(255 255 255 / 0.94);
+    box-shadow: 0 22px 48px -28px rgb(15 23 42 / 0.42), 0 8px 20px -18px rgb(79 70 229 / 0.3);
+  }
+
+  .hero-accent-label,
+  .hero-point-dot,
+  .hero-secondary-cta {
+    color: rgb(109 40 217);
+  }
+
+  .hero-secondary-cta {
+    border-color: rgb(196 181 253);
+  }
+
+  .hero-secondary-cta:hover {
+    border-color: rgb(167 139 250);
+    color: rgb(91 33 182);
+  }
+
+  .laptop-hero-actions {
+    gap: 0.65rem;
+  }
+
+  .hero-point-row {
+    background-color: rgb(248 250 252 / 0.76);
+    border: 1px solid rgb(226 232 240 / 0.55);
   }
 }
 
