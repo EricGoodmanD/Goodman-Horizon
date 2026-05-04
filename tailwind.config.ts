@@ -18,7 +18,7 @@ const config: Config = {
         soft: '0 10px 35px rgba(10, 45, 98, 0.12)'
       },
       backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at 15% 20%, rgba(47, 107, 255, 0.2), transparent 40%), radial-gradient(circle at 85% 80%, rgba(178, 59, 255, 0.14), transparent 45%)'
+        'hero-gradient': 'radial-gradient(circle at 14% 24%, rgba(116, 200, 255, 0.24), transparent 42%), radial-gradient(circle at 86% 76%, rgba(178, 59, 255, 0.16), transparent 46%)'
       },
       keyframes: {
         floatUp: {
