@@ -82,12 +82,12 @@ export default function Home() {
     <>
       <section className="relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
         <div className="pointer-events-none absolute inset-0 bg-hero-gradient opacity-70" />
-        <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandGreen/20 blur-3xl animate-pulse-soft" />
+        <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandAccent/20 blur-3xl animate-pulse-soft" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brandBlue/20 blur-3xl animate-float-slow" />
 
         <div className="section-shell laptop-hero-shell relative grid items-center gap-10 md:grid-cols-2 lg:min-h-[36rem] lg:gap-14 xl:gap-16">
           <div className="animate-floatUp laptop-hero-left lg:pr-4 xl:pr-6">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen laptop-hero-eyebrow">Serving Maryland Communities</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent laptop-hero-eyebrow">Serving Maryland Communities</p>
             <div className="laptop-hero-below-label">
               <h1 className="heading-xl laptop-hero-title mt-5 max-w-xl lg:mt-6">
                 Trusted care coordination that helps people feel supported, stable, and seen.
@@ -110,7 +110,7 @@ export default function Home() {
                     key={item.label}
                     className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
                   >
-                    <p className="text-xs font-semibold uppercase tracking-wide text-brandGreen">{item.label}</p>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-brandAccent">{item.label}</p>
                     <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
                   </div>
                 ))}
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
 
           <div className="card animate-floatUp border-white/80 bg-white/90 p-7 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-hero-card lg:mx-auto lg:w-full lg:max-w-[33rem] lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brandGreen">Referral confidence</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brandAccent">Referral confidence</p>
             <h2 className="mt-2 text-2xl font-semibold text-brandBlue laptop-hero-card-title">Professional support with human warmth</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               We combine leadership-ready coordination with community-centered care so every referral receives clear
@@ -135,7 +135,7 @@ export default function Home() {
                   key={point}
                   className="flex items-start gap-3 rounded-xl bg-brandGray p-3 transition duration-300 hover:bg-white laptop-hero-card-point"
                 >
-                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandGold" />
+                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brandCobalt" />
                   <p className="text-sm text-slate-700">{point}</p>
                 </div>
               ))}
@@ -147,7 +147,7 @@ export default function Home() {
       <TrustMarkers />
 
       <section className="section-shell laptop-support-section pt-0">
-        <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Real-world support in action</p>
+        <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Real-world support in action</p>
         <h2 className="mt-3 heading-lg laptop-support-title">Professional, human-centered care moments across our work</h2>
         <p className="mt-4 max-w-3xl text-slate-700">
           Curated photography placeholders below are designed to be replaced with official Goodman Horizon imagery while
@@ -192,11 +192,11 @@ export default function Home() {
           {services.map((service) => (
             <div
               key={service}
-              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandGreen/30 hover:shadow-xl lg:p-7 laptop-core-card"
+              className="card group text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-brandAccent/30 hover:shadow-xl lg:p-7 laptop-core-card"
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
-                <span className="text-brandGreen transition duration-300 group-hover:translate-x-0.5">→</span>
+                <span className="text-brandAccent transition duration-300 group-hover:translate-x-0.5">→</span>
               </div>
             </div>
           ))}
@@ -205,7 +205,7 @@ export default function Home() {
 
       <section className="section-shell pt-0 lg:pt-2">
         <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft md:p-10 lg:p-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Stories of trust</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Stories of trust</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-brandBlue md:text-4xl lg:text-[2.15rem] xl:text-4xl">
             Families and partners rely on Goodman Horizon
           </h2>
@@ -240,7 +240,7 @@ export default function Home() {
 
       <section className="section-shell pt-0">
         <div className="rounded-3xl bg-brandGray p-8 md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Our mission in action</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Our mission in action</p>
           <h2 className="mt-3 heading-lg">Professional leadership with a deeply human approach</h2>
           <p className="mt-4 max-w-4xl text-slate-700">
             Goodman Horizon exists to make complex systems easier to navigate for people who need support most. We pair

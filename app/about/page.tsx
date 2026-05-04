@@ -11,7 +11,7 @@ export default function AboutPage() {
 
       <section className="section-shell">
         <div className="rounded-3xl bg-brandGray p-8 md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandGreen">Why we exist</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Why we exist</p>
           <h2 className="mt-3 heading-lg">Every person deserves coordinated support that feels respectful and reliable.</h2>
           <p className="mt-4 max-w-4xl text-slate-700">
             Goodman Horizon was founded to close the gap between available resources and real access. We understand how
