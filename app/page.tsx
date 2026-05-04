@@ -80,7 +80,7 @@ const photographySections = [
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
+      <section className="hero-section relative overflow-hidden bg-brandGray laptop-hero-breakpoint-debug">
         <div className="pointer-events-none absolute inset-0 bg-hero-gradient opacity-70" />
         <div className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-brandAccent/20 blur-3xl animate-pulse-soft" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brandBlue/20 blur-3xl animate-float-slow" />
@@ -110,11 +110,11 @@ export default function Home() {
                   Explore Services
                 </Link>
               </div>
-              <div className="mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
+              <div className="hero-metrics mt-10 grid gap-3.5 laptop-hero-stats sm:grid-cols-3 lg:mt-12">
                 {trustStats.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
+                    className="metric-card rounded-xl border border-white/70 bg-white/80 p-3 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5"
                   >
                     <p className="text-xs font-semibold uppercase tracking-wide text-brandAccent">{item.label}</p>
                     <p className="mt-1 text-sm font-medium text-brandBlue">{item.value}</p>
