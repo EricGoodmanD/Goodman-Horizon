@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import PageHero from '@/components/PageHero';
 import { services } from '@/components/site-data';
+import { serviceHrefByLabel } from '@/components/service-pages';
 
 export default function ServicesPage() {
   return (
@@ -12,12 +14,12 @@ export default function ServicesPage() {
       <section className="section-shell">
         <div className="grid gap-4 md:grid-cols-2">
           {services.map((service) => (
-            <article key={service} className="card">
+            <Link key={service} href={serviceHrefByLabel[service]} className="card transition hover:border-brandAccent/30 hover:shadow-lg" aria-label={`Learn more about ${service}`}>
               <h2 className="text-lg font-semibold text-brandBlue">{service}</h2>
               <p className="mt-2 text-sm text-slate-700">
                 Tailored interventions and personalized follow-up to make this service accessible and impactful.
               </p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

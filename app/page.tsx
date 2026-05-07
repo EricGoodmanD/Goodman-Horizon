@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import TrustMarkers from '@/components/TrustMarkers';
 import { services } from '@/components/site-data';
+import { serviceHrefByLabel, supportImageHrefByTitle } from '@/components/service-pages';
 import AssetImage from '@/components/AssetImage';
 import { siteAssets } from '@/config/siteAssets';
 
@@ -175,9 +176,11 @@ export default function Home() {
         </p>
         <div className="mt-8 grid gap-5 laptop-support-grid md:grid-cols-2 xl:grid-cols-4">
           {photographySections.map((item, index) => (
-            <article
+            <Link
               key={item.title}
+              href={supportImageHrefByTitle[item.title]}
               className="group overflow-hidden rounded-2xl border border-sky-100 bg-sky-50/40 shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-xl laptop-support-card"
+              aria-label={`Learn more about ${item.title}`}
             >
               <div className="relative aspect-[4/3] overflow-hidden laptop-support-media">
                 <AssetImage
@@ -197,7 +200,7 @@ export default function Home() {
               <div className="p-4 laptop-support-content">
                 <p className="text-sm text-slate-700">{item.description}</p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
@@ -210,15 +213,17 @@ export default function Home() {
         </p>
         <div className="mt-7 grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:mt-8 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-4 xl:mt-9 xl:gap-x-[1.125rem] xl:gap-y-[1.125rem] laptop-core-grid">
           {services.map((service) => (
-            <div
+            <Link
               key={service}
+              href={serviceHrefByLabel[service]}
               className="card group flex min-h-[2.75rem] items-center px-3.5 py-2.5 text-sm font-medium text-brandBlue transition duration-300 hover:-translate-y-0.5 hover:scale-[1.01] hover:border-brandAccent/30 hover:shadow-lg sm:min-h-[3rem] sm:px-4 sm:py-2.5 lg:min-h-[3.25rem] lg:px-[1.125rem] lg:py-3 laptop-core-card"
+              aria-label={`Learn more about ${service}`}
             >
               <div className="flex items-center justify-between gap-4">
                 <span>{service}</span>
                 <span className="text-brandAccent transition duration-300 group-hover:translate-x-0.5 core-service-arrow">→</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
