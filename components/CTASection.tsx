@@ -19,10 +19,10 @@ export default function CTASection(props: CTASectionProps) {
             <p className="mt-5 max-w-2xl text-slate-100">{props.description}</p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3.5 lg:mt-0 lg:justify-end lg:self-center">
-            <Link href={props.primaryHref} className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-brandBlue shadow-lg shadow-brandBlue/25">
+            <Link href={props.primaryHref} className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-brandBlue shadow-lg shadow-brandBlue/25" aria-label={props.primaryLabel}>
               {props.primaryLabel}
             </Link>
-            <Link href={props.secondaryHref} className="inline-flex rounded-full border border-white px-6 py-3 text-sm font-semibold text-white">
+            <Link href={props.secondaryHref} className="inline-flex rounded-full border border-white px-6 py-3 text-sm font-semibold text-white" aria-label={props.secondaryLabel}>
               {props.secondaryLabel}
             </Link>
           </div>

@@ -21,7 +21,7 @@ export default function Header() {
           <span className="pt-0.5 text-lg font-bold tracking-wide text-brandBlue">Goodman Horizon</span>
         </Link>
 
-        <nav className="laptop-nav hidden items-center gap-6 md:flex">
+        <nav className="laptop-nav hidden items-center gap-6 md:flex" aria-label="Primary navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -33,7 +33,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/referrals" className="btn-primary laptop-header-cta hidden md:inline-flex">
+        <Link href="/referrals" className="btn-primary laptop-header-cta hidden md:inline-flex" aria-label="Make a referral to Goodman Horizon">
           Make a Referral
         </Link>
       </div>
