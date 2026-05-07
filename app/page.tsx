@@ -38,42 +38,50 @@ const photographySections = [
   {
     title: 'Family Support',
     description: 'Warm, practical care coordination for households navigating complex needs.',
-    image: siteAssets.sections.familySupport.primary
+    image: siteAssets.sections.familySupport.primary,
+    imageAlt: 'Family receiving compassionate support from a care coordination professional'
   },
   {
     title: 'Youth Mentorship',
     description: 'Trusted guidance that helps young people build confidence and momentum.',
-    image: siteAssets.sections.youthMentorship.primary
+    image: siteAssets.sections.youthMentorship.primary,
+    imageAlt: 'Youth mentorship conversation focused on guidance and personal growth'
   },
   {
     title: 'Case Management Meetings',
     description: 'Professional planning sessions focused on outcomes, dignity, and access.',
-    image: siteAssets.sections.caseManagement.primary
+    image: siteAssets.sections.caseManagement.primary,
+    imageAlt: 'Case management meeting for coordinated care planning and resources'
   },
   {
     title: 'Behavioral Health Support',
     description: 'Compassionate conversations that center emotional wellness and stability.',
-    image: siteAssets.sections.behavioralHealth.primary
+    image: siteAssets.sections.behavioralHealth.primary,
+    imageAlt: 'Behavioral health support conversation centered on wellness and stability'
   },
   {
     title: 'Community Outreach',
     description: 'Relationship-based partnerships built directly in neighborhoods and communities.',
-    image: siteAssets.sections.communityOutreach.primary
+    image: siteAssets.sections.communityOutreach.primary,
+    imageAlt: 'Community outreach support connecting Maryland residents with local resources'
   },
   {
     title: 'Referral Consultations',
     description: 'Clear intake conversations that make next steps easy for families and agencies.',
-    image: siteAssets.sections.referralConsultations.primary
+    image: siteAssets.sections.referralConsultations.primary,
+    imageAlt: 'Referral consultation for families and agencies reviewing next steps'
   },
   {
     title: 'Supportive Housing Coordination',
     description: 'Collaborative support for housing pathways, safety, and long-term stability.',
-    image: siteAssets.sections.housingSupport.primary
+    image: siteAssets.sections.housingSupport.primary,
+    imageAlt: 'Supportive housing coordination discussion for safety and stability'
   },
   {
     title: 'Professional Care & Trust-Building',
     description: 'Human-centered support moments that strengthen confidence and belonging.',
-    image: siteAssets.sections.trustCare.primary
+    image: siteAssets.sections.trustCare.primary,
+    imageAlt: 'Professional care support moment focused on trust and belonging'
   }
 ];
 
@@ -101,12 +109,14 @@ export default function Home() {
                   <Link
                     href="/referrals"
                     className="btn-primary bg-violet-700 shadow-violet-700/25 hover:bg-violet-800 focus-visible:ring-violet-700"
+                    aria-label="Submit a referral to Goodman Horizon"
                   >
                     Submit a Referral
                   </Link>
                   <Link
                     href="/services"
                     className="btn-secondary border-violet-200 text-violet-600 hover:border-violet-300 hover:bg-violet-100 hover:text-violet-700 hero-secondary-cta"
+                    aria-label="Explore Goodman Horizon services"
                   >
                     Explore Services
                   </Link>
@@ -172,7 +182,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] overflow-hidden laptop-support-media">
                 <AssetImage
                   src={item.image}
-                  alt={`${item.title} photography placeholder`}
+                  alt={item.imageAlt}
                   fallbackLabel={`${item.title} image missing`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
@@ -258,7 +268,7 @@ export default function Home() {
             confidence.
           </p>
           <div className="mt-7">
-            <Link href="/about" className="btn-secondary mobile-secondary-accent">
+            <Link href="/about" className="btn-secondary mobile-secondary-accent" aria-label="Learn more about Goodman Horizon mission">
               Learn More About Our Mission
             </Link>
           </div>

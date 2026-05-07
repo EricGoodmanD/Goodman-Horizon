@@ -35,7 +35,7 @@ export default function ContactPage() {
             </label>
             <textarea id="message" rows={5} className="w-full rounded-lg border border-slate-300 px-4 py-3" />
           </div>
-          <button type="submit" className="btn-primary w-fit">
+          <button type="submit" className="btn-primary w-fit" aria-label="Send inquiry to Goodman Horizon">
             Send Inquiry
           </button>
         </form>

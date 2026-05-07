@@ -54,7 +54,7 @@ export default function ReferralsPage() {
             <textarea id="needs" rows={5} className="w-full rounded-lg border border-slate-300 px-4 py-3" />
           </div>
           <div className="md:col-span-2">
-            <button type="submit" className="btn-primary">
+            <button type="submit" className="btn-primary" aria-label="Submit referral form">
               Submit Referral
             </button>
           </div>

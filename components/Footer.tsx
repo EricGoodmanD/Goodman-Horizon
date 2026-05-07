@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
             <p className="mt-6 text-sm font-medium text-slate-100">goodmanhorizon.com</p>
           </div>
-          <div className="md:pl-2 laptop-footer-links">
+          <nav className="md:pl-2 laptop-footer-links" aria-label="Footer navigation">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandCobalt">Quick Links</p>
             <div className="mt-6 grid gap-3 text-sm">
               {navLinks.map((link) => (
@@ -26,7 +26,7 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </nav>
           <div className="md:text-left laptop-footer-contact">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brandCobalt">Contact</p>
             <div className="mt-6 space-y-2 text-sm text-slate-100/95">
