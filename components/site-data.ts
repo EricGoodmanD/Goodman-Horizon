@@ -21,3 +21,18 @@ export const services = [
   'Friendly visitor',
   'Crisis management'
 ];
+
+export const seoServices = [
+  'Care coordination',
+  'Case management assistance',
+  'Family support',
+  'Resource coordination',
+  'Housing support',
+  'Group home services',
+  'Youth mentorship',
+  'Behavioral health support',
+  'Community outreach',
+  'Crisis management',
+  'Friendly visitor',
+  'Peer supports'
+];
