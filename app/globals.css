@@ -47,6 +47,7 @@ body {
 
 @media (min-width: 1024px) {
   .service-detail-hero-shell {
+    max-width: 72rem;
     grid-template-columns: minmax(0, 0.95fr) minmax(28rem, 1fr);
     align-items: center;
     column-gap: 4.5rem;
@@ -60,14 +61,14 @@ body {
 
 @media (min-width: 1280px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 0.92fr) minmax(33rem, 1.08fr);
-    column-gap: 5rem;
+    grid-template-columns: minmax(0, 0.94fr) minmax(30rem, 1.06fr);
+    column-gap: 4.75rem;
   }
 }
 
 @media (min-width: 1440px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 0.9fr) minmax(35rem, 1.1fr);
+    grid-template-columns: minmax(0, 0.94fr) minmax(30rem, 1.06fr);
   }
 }
 
