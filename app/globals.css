@@ -34,6 +34,37 @@ body {
   @apply inline-flex items-center justify-center rounded-full border border-brandAccent px-6 py-3 text-sm font-semibold text-brandAccent transition hover:bg-brandAccent/10;
 }
 
+@media (min-width: 1024px) {
+  .service-detail-hero-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(28rem, 30rem);
+    align-items: center;
+  }
+
+  .service-detail-image-card {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    justify-self: end;
+  }
+
+  .service-detail-hero-image {
+    object-position: center 42%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .service-detail-hero-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(32rem, 34rem);
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .service-detail-hero-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(34rem, 36rem);
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .hero-section .hero-shell {
     padding-top: 1.45rem;
