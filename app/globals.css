@@ -47,26 +47,27 @@ body {
 
 @media (min-width: 1024px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 0.9fr) minmax(32rem, 1.1fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(28rem, 1fr);
     align-items: center;
+    column-gap: 4.5rem;
   }
 
   .service-detail-image-card {
-    width: 100%;
+    width: 88%;
     justify-self: end;
   }
 }
 
 @media (min-width: 1280px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 0.88fr) minmax(38rem, 1.12fr);
-    gap: 4rem;
+    grid-template-columns: minmax(0, 0.92fr) minmax(33rem, 1.08fr);
+    column-gap: 5rem;
   }
 }
 
 @media (min-width: 1440px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 0.86fr) minmax(40rem, 1.14fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(35rem, 1.1fr);
   }
 }
 
