@@ -211,11 +211,11 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
         </div>
       </section>
 
-      <section className="section-shell pt-0 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">FAQ</p>
-          <h2 className="mt-3 heading-lg">Frequently asked questions</h2>
-          <div className="mt-7 space-y-4">
+      <section className="section-shell pt-0">
+        <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">FAQ</p>
+        <h2 className="mt-3 heading-lg">Frequently asked questions</h2>
+        <div className="mt-7 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-stretch">
+          <div className="space-y-4">
             {service.faqs.map((faq) => (
               <article key={faq.question} className="card">
                 <h3 className="text-lg font-semibold text-brandBlue">{faq.question}</h3>
@@ -223,23 +223,23 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
               </article>
             ))}
           </div>
+          <aside className="card lg:flex lg:h-full lg:flex-col lg:p-5">
+            <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Related services</p>
+            <h2 className="mt-3 text-2xl font-semibold text-brandBlue lg:text-xl">Explore connected support</h2>
+            <div className="mt-5 space-y-3 lg:mt-4 lg:space-y-2.5">
+              {relatedServices.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={`/${related.slug}`}
+                  className="block rounded-2xl border border-slate-200 px-4 py-3 text-sm font-semibold text-brandBlue transition hover:border-brandAccent/40 hover:bg-sky-50 lg:py-2.5"
+                  aria-label={`Learn more about ${related.title}`}
+                >
+                  {related.label} <span aria-hidden="true">→</span>
+                </Link>
+              ))}
+            </div>
+          </aside>
         </div>
-        <aside className="card h-fit lg:mt-[6.75rem] xl:mt-[6.875rem]">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Related services</p>
-          <h2 className="mt-3 text-2xl font-semibold text-brandBlue">Explore connected support</h2>
-          <div className="mt-5 space-y-3">
-            {relatedServices.map((related) => (
-              <Link
-                key={related.slug}
-                href={`/${related.slug}`}
-                className="block rounded-2xl border border-slate-200 px-4 py-3 text-sm font-semibold text-brandBlue transition hover:border-brandAccent/40 hover:bg-sky-50"
-                aria-label={`Learn more about ${related.title}`}
-              >
-                {related.label} <span aria-hidden="true">→</span>
-              </Link>
-            ))}
-          </div>
-        </aside>
       </section>
 
       <CTASection
