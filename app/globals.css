@@ -34,31 +34,39 @@ body {
   @apply inline-flex items-center justify-center rounded-full border border-brandAccent px-6 py-3 text-sm font-semibold text-brandAccent transition hover:bg-brandAccent/10;
 }
 
+@media (min-width: 768px) {
+  .service-detail-hero-shell {
+    max-width: 80rem;
+  }
+
+  .service-detail-image-card {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 1fr) minmax(28rem, 30rem);
+    grid-template-columns: minmax(0, 0.9fr) minmax(32rem, 1.1fr);
     align-items: center;
   }
 
   .service-detail-image-card {
     width: 100%;
-    min-height: 0;
-    aspect-ratio: 16 / 10;
     justify-self: end;
   }
-
 }
 
 @media (min-width: 1280px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 1fr) minmax(32rem, 34rem);
+    grid-template-columns: minmax(0, 0.88fr) minmax(38rem, 1.12fr);
     gap: 4rem;
   }
 }
 
 @media (min-width: 1440px) {
   .service-detail-hero-shell {
-    grid-template-columns: minmax(0, 1fr) minmax(34rem, 36rem);
+    grid-template-columns: minmax(0, 0.86fr) minmax(40rem, 1.14fr);
   }
 }
 
