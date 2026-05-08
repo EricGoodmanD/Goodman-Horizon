@@ -127,7 +127,7 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
       />
 
       <section className="bg-brandGray">
-        <div className="service-detail-hero-shell section-shell grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-14">
+        <div className="service-detail-hero-shell section-shell grid items-center gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(32rem,1.1fr)] lg:gap-14">
           <div className="animate-floatUp">
             <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
               <ol className="flex flex-wrap items-center gap-2">
@@ -160,14 +160,14 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
               </Link>
             </div>
           </div>
-          <div className="service-detail-image-card service-detail-hero-media relative min-h-[18rem] overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-soft sm:min-h-[22rem] lg:min-h-[26rem]">
+          <div className="service-detail-image-card service-detail-hero-media relative w-full min-h-[18rem] overflow-hidden rounded-[2rem] border border-sky-100 bg-white shadow-soft sm:min-h-[22rem] md:aspect-[16/9] md:min-h-0 lg:aspect-[16/9] lg:min-h-0 xl:aspect-[16/9]">
             <AssetImage
               src={service.image}
               alt={service.imageAlt}
               fallbackLabel={`${service.label} image missing`}
               fill
-              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 30rem, 36rem"
-              className="service-detail-hero-image object-cover"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 28rem, 35rem"
+              className="service-detail-hero-image object-cover object-center"
               style={{ objectPosition: service.imagePosition }}
               priority
             />
