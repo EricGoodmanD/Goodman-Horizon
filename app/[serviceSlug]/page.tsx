@@ -168,6 +168,7 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
               fill
               sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 30rem, 36rem"
               className="service-detail-hero-image object-cover"
+              style={{ objectPosition: service.imagePosition }}
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brandBlue/45 to-transparent" />

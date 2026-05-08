@@ -16,6 +16,7 @@ export type ServicePage = {
   related: string[];
   image: string;
   imageAlt: string;
+  imagePosition: string;
 };
 
 const serviceImages = {
@@ -70,7 +71,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['resource-coordination-maryland', 'family-support-services-maryland', 'behavioral-health-support-maryland'],
     image: serviceImages.caseManagement,
-    imageAlt: 'Maryland case management planning meeting with a support professional'
+    imageAlt: 'Maryland case management planning meeting with a support professional',
+    imagePosition: 'center 47%'
   },
   {
     slug: 'family-support-services-maryland',
@@ -109,7 +111,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['case-management-services-maryland', 'youth-mentorship-maryland', 'resource-coordination-maryland'],
     image: serviceImages.familySupport,
-    imageAlt: 'Maryland family support conversation with a compassionate care coordinator'
+    imageAlt: 'Maryland family support conversation with a compassionate care coordinator',
+    imagePosition: 'center 48%'
   },
   {
     slug: 'resource-coordination-maryland',
@@ -148,7 +151,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['case-management-services-maryland', 'housing-support-maryland', 'community-outreach-maryland'],
     image: serviceImages.resourceCoordination,
-    imageAlt: 'Maryland referral consultation reviewing community resource options'
+    imageAlt: 'Maryland referral consultation reviewing community resource options',
+    imagePosition: 'center 48%'
   },
   {
     slug: 'housing-support-maryland',
@@ -187,7 +191,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['resource-coordination-maryland', 'case-management-services-maryland', 'crisis-management-support-maryland'],
     image: serviceImages.housingSupport,
-    imageAlt: 'Maryland housing support coordination conversation for stability planning'
+    imageAlt: 'Maryland housing support coordination conversation for stability planning',
+    imagePosition: 'center 46%'
   },
   {
     slug: 'employment-support-maryland',
@@ -226,7 +231,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['youth-mentorship-maryland', 'peer-support-services-maryland', 'resource-coordination-maryland'],
     image: serviceImages.employmentSupport,
-    imageAlt: 'Maryland employment support planning focused on confidence and next steps'
+    imageAlt: 'Maryland employment support planning focused on confidence and next steps',
+    imagePosition: 'center 45%'
   },
   {
     slug: 'community-outreach-maryland',
@@ -265,7 +271,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['resource-coordination-maryland', 'family-support-services-maryland', 'friendly-visitor-services-maryland'],
     image: serviceImages.communityOutreach,
-    imageAlt: 'Maryland community outreach meeting connecting residents with support resources'
+    imageAlt: 'Maryland community outreach meeting connecting residents with support resources',
+    imagePosition: 'center 50%'
   },
   {
     slug: 'peer-support-services-maryland',
@@ -304,7 +311,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['behavioral-health-support-maryland', 'employment-support-maryland', 'friendly-visitor-services-maryland'],
     image: serviceImages.peerSupport,
-    imageAlt: 'Maryland peer support conversation focused on trust and belonging'
+    imageAlt: 'Maryland peer support conversation focused on trust and belonging',
+    imagePosition: 'center 45%'
   },
   {
     slug: 'youth-mentorship-maryland',
@@ -343,7 +351,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['family-support-services-maryland', 'employment-support-maryland', 'behavioral-health-support-maryland'],
     image: serviceImages.youthMentorship,
-    imageAlt: 'Maryland youth mentorship conversation encouraging confidence and growth'
+    imageAlt: 'Maryland youth mentorship conversation encouraging confidence and growth',
+    imagePosition: 'center 46%'
   },
   {
     slug: 'behavioral-health-support-maryland',
@@ -382,7 +391,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['crisis-management-support-maryland', 'peer-support-services-maryland', 'case-management-services-maryland'],
     image: serviceImages.behavioralHealth,
-    imageAlt: 'Maryland behavioral health support conversation centered on wellness and stability'
+    imageAlt: 'Maryland behavioral health support conversation centered on wellness and stability',
+    imagePosition: 'center 48%'
   },
   {
     slug: 'friendly-visitor-services-maryland',
@@ -421,7 +431,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['peer-support-services-maryland', 'community-outreach-maryland', 'family-support-services-maryland'],
     image: serviceImages.friendlyVisitor,
-    imageAlt: 'Maryland friendly visitor support providing warm community connection'
+    imageAlt: 'Maryland friendly visitor support providing warm community connection',
+    imagePosition: 'center 50%'
   },
   {
     slug: 'crisis-management-support-maryland',
@@ -460,7 +471,8 @@ export const servicePages: ServicePage[] = [
     ],
     related: ['behavioral-health-support-maryland', 'case-management-services-maryland', 'housing-support-maryland'],
     image: serviceImages.crisisManagement,
-    imageAlt: 'Maryland crisis management support planning for urgent stabilization needs'
+    imageAlt: 'Maryland crisis management support planning for urgent stabilization needs',
+    imagePosition: 'center 47%'
   }
 ];
 
