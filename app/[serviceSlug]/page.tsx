@@ -166,7 +166,7 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
               alt={service.imageAlt}
               fallbackLabel={`${service.label} image missing`}
               fill
-              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 32rem, 40rem"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 28rem, 35rem"
               className="service-detail-hero-image object-cover object-center"
               style={{ objectPosition: service.imagePosition }}
               priority
