@@ -224,7 +224,7 @@ export default function ServiceDetailPage({ params }: ServiceRouteProps) {
             ))}
           </div>
         </div>
-        <aside className="card h-fit">
+        <aside className="card h-fit lg:mt-[6.75rem] xl:mt-[6.875rem]">
           <p className="text-sm font-semibold uppercase tracking-wider text-brandAccent">Related services</p>
           <h2 className="mt-3 text-2xl font-semibold text-brandBlue">Explore connected support</h2>
           <div className="mt-5 space-y-3">
